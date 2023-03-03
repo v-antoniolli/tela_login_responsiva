@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tela de login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/midiaquery.css">
 </head>
 <body>
   <main>
@@ -15,9 +17,26 @@
       </div>
       <div id="formulario">
         <h1>Login</h1>
-        <p>Seja bem-vendo(a).Para acessar sua conta. Faça o login corretamente. </p>
-        <form action="login.ophp" method="post">
-
+        <p>Seja bem-vendo(a). Para acessar sua conta. Faça o login corretamente. </p>
+        <form action="login.ophp" method="post" autocomplete="on">
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              person
+              </span>
+            <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" required autocomplete="email" size="19">
+            <label for="ilogin">Login</label>
+          </div>
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              vpn_key
+              </span>
+            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" size="19">
+            <label for="isenha">Senha</label>
+          </div>
+          <input type="submit" value="Enviar">
+          <a href="esqueci.html">Esquecia senha <span class="material-symbols-outlined">
+            mail
+            </span></a>
         </form>
       </div>
     </section>
