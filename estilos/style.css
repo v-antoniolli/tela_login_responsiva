@@ -108,3 +108,18 @@ form a.botao:hover{
   background-color:#316c6a ;
   cursor: pointer;
 }
+div.campo span {
+  color: #2b9f9b;
+  font-size: 1.8em;
+  margin-top: 6px;
+}
+div.campo input{
+  height: 20px;
+  padding-top: 20px;
+  padding-bottom: 9px;
+  border-radius: 8px;
+  background-color:#55e1dc ;
+}
+div.campo input:focus-within{
+background-color: white;
+}
